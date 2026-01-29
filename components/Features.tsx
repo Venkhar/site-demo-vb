@@ -27,7 +27,7 @@ export default function Features() {
         <h2 className="font-orbitron text-3xl md:text-5xl font-black text-white tracking-wider">
           INNOVATION
         </h2>
-        <p className="font-rajdhani text-lg md:text-xl text-lambo-orange mt-2 tracking-wider">
+        <p className="font-rajdhani text-lg md:text-xl text-lambo-teal mt-2 tracking-wider">
           TECHNOLOGY MEETS PASSION
         </p>
       </motion.div>
@@ -51,19 +51,19 @@ export default function Features() {
               }}
               className="group"
             >
-              <div className="flex items-start gap-4 md:gap-6 p-6 bg-lambo-black/50 border border-carbon-light hover:border-lambo-orange/50 transition-all duration-300">
+              <div className="flex items-start gap-4 md:gap-6 p-6 bg-lambo-black/50 border border-carbon-light hover:border-lambo-purple/50 transition-all duration-300">
                 {/* Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-lambo-orange/10 border border-lambo-orange/30 group-hover:bg-lambo-orange/20 group-hover:border-lambo-orange/50 transition-all duration-300">
+                  <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-lambo-purple/10 border border-lambo-purple/30 group-hover:bg-lambo-purple/20 group-hover:border-lambo-purple/50 transition-all duration-300">
                     {Icon && (
-                      <Icon className="w-6 h-6 md:w-8 md:h-8 text-lambo-orange group-hover:scale-110 transition-transform duration-300" />
+                      <Icon className="w-6 h-6 md:w-8 md:h-8 text-lambo-teal group-hover:scale-110 transition-transform duration-300" />
                     )}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
-                  <h3 className="font-orbitron text-lg md:text-xl font-bold text-white tracking-wider mb-2 group-hover:text-lambo-orange transition-colors">
+                  <h3 className="font-orbitron text-lg md:text-xl font-bold text-white tracking-wider mb-2 group-hover:text-lambo-teal transition-colors">
                     {feature.title}
                   </h3>
                   <p className="font-rajdhani text-sm md:text-base text-gray-400 leading-relaxed">
@@ -72,7 +72,7 @@ export default function Features() {
                 </div>
 
                 {/* Decorative corner */}
-                <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-lambo-orange/20 group-hover:border-lambo-orange/50 transition-colors" />
+                <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-lambo-purple/20 group-hover:border-lambo-purple/50 transition-colors" />
               </div>
             </motion.div>
           );
@@ -93,7 +93,7 @@ export default function Features() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="px-8 py-4 border-2 border-lambo-orange text-lambo-orange hover:bg-lambo-orange hover:text-black font-rajdhani font-bold text-lg tracking-wider transition-all duration-300"
+          className="px-8 py-4 border-2 border-lambo-teal text-lambo-teal hover:bg-lambo-teal hover:text-black font-rajdhani font-bold text-lg tracking-wider transition-all duration-300"
         >
           DISCOVER MORE
         </motion.button>

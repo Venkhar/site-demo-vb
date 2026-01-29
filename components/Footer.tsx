@@ -43,7 +43,7 @@ const customEase: [number, number, number, number] = [0.43, 0.13, 0.23, 0.96];
 
 export default function Footer() {
   return (
-    <footer className="bg-lambo-black border-t border-lambo-orange/20">
+    <footer className="bg-lambo-black border-t border-lambo-purple/20">
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
@@ -55,7 +55,7 @@ export default function Footer() {
             transition={{ duration: 0.6, ease: customEase }}
             className="md:col-span-1"
           >
-            <div className="font-orbitron text-2xl font-black text-lambo-orange tracking-wider">
+            <div className="font-orbitron text-2xl font-black text-lambo-purple tracking-wider">
               LAMBORGHINI
             </div>
             <p className="font-rajdhani text-sm text-gray-500 mt-2">
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="font-rajdhani text-gray-400 hover:text-lambo-orange transition-colors"
+                    className="font-rajdhani text-gray-400 hover:text-lambo-teal transition-colors"
                   >
                     {link.label}
                   </a>
@@ -113,7 +113,7 @@ export default function Footer() {
                   href={social.href}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-10 h-10 flex items-center justify-center border border-carbon-light text-gray-400 hover:border-lambo-orange hover:text-lambo-orange transition-colors"
+                  className="w-10 h-10 flex items-center justify-center border border-carbon-light text-gray-400 hover:border-lambo-teal hover:text-lambo-teal transition-colors"
                   aria-label={social.label}
                 >
                   {social.icon}
@@ -137,13 +137,13 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Email"
-                className="flex-1 px-4 py-2 bg-carbon-gray border border-carbon-light font-rajdhani text-white placeholder:text-gray-500 focus:border-lambo-orange focus:outline-none transition-colors"
+                className="flex-1 px-4 py-2 bg-carbon-gray border border-carbon-light font-rajdhani text-white placeholder:text-gray-500 focus:border-lambo-purple focus:outline-none transition-colors"
               />
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="px-4 py-2 bg-lambo-orange text-black font-rajdhani font-bold tracking-wider"
+                className="px-4 py-2 bg-lambo-purple text-white font-rajdhani font-bold tracking-wider"
               >
                 JOIN
               </motion.button>
@@ -161,19 +161,19 @@ export default function Footer() {
           <div className="flex gap-6">
             <a
               href="#"
-              className="font-rajdhani text-xs text-gray-500 hover:text-lambo-orange transition-colors"
+              className="font-rajdhani text-xs text-gray-500 hover:text-lambo-teal transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="font-rajdhani text-xs text-gray-500 hover:text-lambo-orange transition-colors"
+              className="font-rajdhani text-xs text-gray-500 hover:text-lambo-teal transition-colors"
             >
               Cookie Policy
             </a>
             <a
               href="#"
-              className="font-rajdhani text-xs text-gray-500 hover:text-lambo-orange transition-colors"
+              className="font-rajdhani text-xs text-gray-500 hover:text-lambo-teal transition-colors"
             >
               Legal Notice
             </a>

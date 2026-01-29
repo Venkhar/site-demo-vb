@@ -28,8 +28,8 @@ export default function Navbar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-3">
-        <LamborghiniLogo className="w-10 h-10 text-lambo-orange" />
-        <span className="font-orbitron text-xl md:text-2xl font-bold text-lambo-orange tracking-wider">
+        <LamborghiniLogo className="w-10 h-10 text-lambo-purple" />
+        <span className="font-orbitron text-xl md:text-2xl font-bold text-lambo-purple tracking-wider">
           TEMERARIO
         </span>
       </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="px-4 md:px-6 py-2 md:py-3 border-2 border-lambo-orange text-lambo-orange hover:bg-lambo-orange hover:text-black transition-all duration-300 font-rajdhani font-semibold tracking-wider text-sm md:text-base"
+        className="px-4 md:px-6 py-2 md:py-3 border-2 border-lambo-teal text-lambo-teal hover:bg-lambo-teal hover:text-black transition-all duration-300 font-rajdhani font-semibold tracking-wider text-sm md:text-base"
       >
         CONFIGURE
       </motion.button>

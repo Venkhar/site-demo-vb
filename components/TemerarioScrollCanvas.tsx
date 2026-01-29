@@ -170,14 +170,14 @@ export default function TemerarioScrollCanvas({
             className="text-center"
           >
             {/* Logo */}
-            <h1 className="font-orbitron text-4xl md:text-6xl font-black text-lambo-orange mb-8 tracking-widest animate-pulse-glow">
+            <h1 className="font-orbitron text-4xl md:text-6xl font-black text-lambo-purple mb-8 tracking-widest animate-pulse-glow">
               LAMBORGHINI
             </h1>
 
             {/* Progress bar container */}
             <div className="w-64 md:w-80 h-1 bg-carbon-gray rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-lambo-orange to-bright-orange"
+                className="h-full bg-gradient-to-r from-lambo-purple to-lambo-teal"
                 initial={{ width: 0 }}
                 animate={{ width: `${loadingProgress}%` }}
                 transition={{ duration: 0.1 }}

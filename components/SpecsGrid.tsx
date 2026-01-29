@@ -19,7 +19,7 @@ export default function SpecsGrid() {
         <h2 className="font-orbitron text-3xl md:text-5xl font-black text-white tracking-wider">
           PERFORMANCE
         </h2>
-        <p className="font-rajdhani text-lg md:text-xl text-lambo-orange mt-2 tracking-wider">
+        <p className="font-rajdhani text-lg md:text-xl text-lambo-teal mt-2 tracking-wider">
           NUMBERS THAT DEFINE EXCELLENCE
         </p>
       </motion.div>
@@ -37,11 +37,11 @@ export default function SpecsGrid() {
               duration: 0.6,
               ease: customEase,
             }}
-            whileHover={{ scale: 1.05, borderColor: 'var(--color-lambo-orange)' }}
+            whileHover={{ scale: 1.05, borderColor: 'var(--color-lambo-purple)' }}
             className="bg-carbon-gray border border-carbon-light p-6 md:p-8 transition-all duration-300 group cursor-pointer"
           >
             <motion.div
-              className="text-3xl md:text-5xl font-orbitron font-black text-lambo-orange mb-2 group-hover:glow-orange transition-shadow"
+              className="text-3xl md:text-5xl font-orbitron font-black text-lambo-purple mb-2 group-hover:glow-purple transition-shadow"
             >
               {stat.value}
             </motion.div>
@@ -58,7 +58,7 @@ export default function SpecsGrid() {
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.8, ease: customEase }}
-        className="mt-12 md:mt-16 h-px bg-gradient-to-r from-transparent via-lambo-orange/50 to-transparent max-w-4xl mx-auto"
+        className="mt-12 md:mt-16 h-px bg-gradient-to-r from-transparent via-lambo-purple/50 to-transparent max-w-4xl mx-auto"
       />
     </section>
   );
