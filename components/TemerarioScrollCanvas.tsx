@@ -203,31 +203,31 @@ export default function TemerarioScrollCanvas({
         }}
       />
 
-      {/* Watermark Cover - Bottom Right HUD Element */}
+      {/* Watermark Cover - Bottom gradient band */}
       {isLoaded && (
-        <div className="absolute bottom-0 right-0 z-10 pointer-events-none">
-          {/* Gradient overlay */}
+        <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none">
+          {/* Horizontal gradient band - transparent left, opaque right */}
           <div
-            className="w-32 h-20 sm:w-40 sm:h-24 md:w-48 md:h-28 lg:w-56 lg:h-32"
+            className="w-full h-16 sm:h-20 md:h-24 lg:h-28"
             style={{
-              background: 'linear-gradient(135deg, transparent 0%, transparent 30%, rgba(10,10,10,0.7) 60%, rgba(10,10,10,0.95) 100%)',
+              background: 'linear-gradient(to right, transparent 0%, transparent 40%, rgba(10,10,10,0.6) 60%, rgba(10,10,10,0.9) 80%, rgba(10,10,10,1) 100%)',
             }}
           >
-            {/* HUD-style content */}
-            <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:bottom-4 md:right-4 text-right">
+            {/* HUD-style content on the right */}
+            <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 md:bottom-5 md:right-6 text-right">
               {/* Decorative line */}
-              <div className="flex items-center justify-end gap-1 sm:gap-2 mb-1">
-                <div className="w-6 sm:w-8 md:w-12 h-px bg-gradient-to-r from-transparent to-lambo-purple/60" />
-                <div className="w-1 h-1 bg-lambo-teal/80" />
+              <div className="flex items-center justify-end gap-2 mb-1">
+                <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent to-lambo-purple/60" />
+                <div className="w-1.5 h-1.5 bg-lambo-teal/80" />
               </div>
 
               {/* Brand text */}
-              <div className="font-orbitron text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs font-bold text-lambo-purple/80 tracking-widest">
+              <div className="font-orbitron text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-bold text-lambo-purple/90 tracking-widest">
                 TEMERARIO
               </div>
 
               {/* Sub text */}
-              <div className="font-rajdhani text-[6px] sm:text-[7px] md:text-[8px] lg:text-[9px] text-white/40 tracking-wider">
+              <div className="font-rajdhani text-[7px] sm:text-[8px] md:text-[9px] lg:text-[10px] text-white/50 tracking-wider">
                 920 CV HPEV
               </div>
             </div>
