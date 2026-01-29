@@ -202,6 +202,38 @@ export default function TemerarioScrollCanvas({
           transition: 'opacity 0.5s ease-out',
         }}
       />
+
+      {/* Watermark Cover - Bottom Right HUD Element */}
+      {isLoaded && (
+        <div className="absolute bottom-0 right-0 z-10 pointer-events-none">
+          {/* Gradient overlay */}
+          <div
+            className="w-32 h-20 sm:w-40 sm:h-24 md:w-48 md:h-28 lg:w-56 lg:h-32"
+            style={{
+              background: 'linear-gradient(135deg, transparent 0%, transparent 30%, rgba(10,10,10,0.7) 60%, rgba(10,10,10,0.95) 100%)',
+            }}
+          >
+            {/* HUD-style content */}
+            <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3 md:bottom-4 md:right-4 text-right">
+              {/* Decorative line */}
+              <div className="flex items-center justify-end gap-1 sm:gap-2 mb-1">
+                <div className="w-6 sm:w-8 md:w-12 h-px bg-gradient-to-r from-transparent to-lambo-purple/60" />
+                <div className="w-1 h-1 bg-lambo-teal/80" />
+              </div>
+
+              {/* Brand text */}
+              <div className="font-orbitron text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs font-bold text-lambo-purple/80 tracking-widest">
+                TEMERARIO
+              </div>
+
+              {/* Sub text */}
+              <div className="font-rajdhani text-[6px] sm:text-[7px] md:text-[8px] lg:text-[9px] text-white/40 tracking-wider">
+                920 CV HPEV
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
